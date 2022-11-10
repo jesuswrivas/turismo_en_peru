@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav,
+footer {
+    display: flex;
+    background-color: #1f2937;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main--intro {
+    display: flex;
+}
+
+.main--destinations {
+    display: flex;
+    flex-direction: column;
+}
+
+.main--destinations--container {
+    display: flex;
+}
+
+.main--quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+}
+
+.main--signup {
+    display: flex;
+}
+
+.main--signup--container {
+    display: flex;
+}
