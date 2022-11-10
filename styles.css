@@ -3,16 +3,43 @@
     padding: 0;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
 }
 
+/* Navigation bar styling.  */
 .nav,
 footer {
     display: flex;
     background-color: #1f2937;
 }
+
+.nav {
+    justify-content: space-between;
+    padding: 0px 200px 0 200px;
+    align-items: center;
+}
+
+.header--logocontainer--llamalogo {
+    width: 50px;
+    height: auto;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 20px;
+
+}
+
+/* Main Body styling.  */
+
 
 
 .main {
