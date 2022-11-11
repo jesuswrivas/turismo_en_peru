@@ -4,6 +4,12 @@
     outline: 1px dashed red;
 }
 
+body,
+html {
+    min-height: 100vh;
+
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,6 +18,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* Navigation bar styling.  */
 .nav,
@@ -73,11 +81,6 @@ html and body, as well as flex: 1 on .main class*/
 
 }
 
-.main--intro--left {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
 
 .main--intro--right--image {
     width: 400px;
@@ -97,6 +100,7 @@ h1 {
     font-size: 18px;
     color: #e5e7eb;
     width: 600px;
+    margin: 16px 0 16px 0;
 
 
 }
@@ -106,6 +110,7 @@ h1 {
     color: #f9faf8;
     padding: 10px 30px;
     border-radius: 10%;
+
 
 }
 
@@ -146,7 +151,7 @@ h1 {
     height: 220px;
     object-fit: cover;
     border-radius: 10%;
-    border: 3px solid #3882f6;
+    border: 2px solid #3882f6;
 
 }
 
@@ -186,17 +191,47 @@ h1 {
 
 
 
+/* Main--signup styling.  */
+
 .main--signup {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.main--signup button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 10px 30px;
+    border-radius: 10%;
+    border: 2px solid white;
 
 }
 
 .main--signup--container {
     display: flex;
+    background-color: #3882f6;
+    padding: 40px 120px;
+    border-radius: 3%;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    color: #e5e7eb;
 }
 
-body,
-html {
-    min-height: 100vh;
+.main--signup--container p {
+    margin: 16px 0;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
 
 }
