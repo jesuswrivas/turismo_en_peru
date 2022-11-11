@@ -1,6 +1,7 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    outline: 1px dashed red;
 }
 
 html {
@@ -21,8 +22,17 @@ footer {
 
 .nav {
     justify-content: space-between;
-    padding: 0px 200px 0 200px;
     align-items: center;
+}
+
+
+.header--logocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #f9faf8;
+
 }
 
 .header--logocontainer--llamalogo {
@@ -35,41 +45,158 @@ footer {
     list-style: none;
     color: white;
     gap: 20px;
+    font-size: 18px;
+    color: #f9faf8;
 
 }
 
-/* Main Body styling.  */
+/* Main Body styling.  At first, main  was not using full browser lenght. Had to use 100vh on 
+html and body, as well as flex: 1 on .main class*/
 
 
 
 .main {
     display: flex;
     flex-direction: column;
+    flex: 1;
+
 }
+
+/* Main--Intro styling.  */
 
 .main--intro {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+
 }
+
+.main--intro--left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main--intro--right--image {
+    width: 400px;
+    height: 200;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+    width: 500px;
+}
+
+
+.main--intro--left p {
+    font-size: 18px;
+    color: #e5e7eb;
+    width: 600px;
+
+
+}
+
+.main--intro--left button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 10px 30px;
+    border-radius: 10%;
+
+}
+
+/* Main--Destinations styling.  */
 
 .main--destinations {
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
+
+.main--destinations--title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
 
 .main--destinations--container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
 }
+
+
+.main--destinations--container--site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.main--destinations--container--site--image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #3882f6;
+
+}
+
+.main--destinations--container--site--text {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+
+}
+
+/* Main--Quote styling.  */
 
 .main--quote {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #e5e7eb;
+
 }
+
+
+.main--quote--text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    width: 900px;
+    height: auto;
+}
+
+.main--slogan--author {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
 
 .main--signup {
     display: flex;
+
 }
 
 .main--signup--container {
     display: flex;
+}
+
+body,
+html {
+    min-height: 100vh;
+
 }
